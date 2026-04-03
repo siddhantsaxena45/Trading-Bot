@@ -1,7 +1,7 @@
 # Binance Futures Testnet Trading Bot
 **A Simplified Python CLI Trading Application for the USDT-M Futures Testnet**
 
-This project is a clean, robust, and highly structured Command Line Interface (CLI) application built to interact with the [Binance Futures Testnet](https://testnet.binancefuture.com). It was specifically designed to handle dynamic execution of MARKET, LIMIT, and STOP (Stop-Limit) orders while providing top-tier user experience and logging.
+This project is a clean, robust, and highly structured Command Line Interface (CLI) application built to interact with the [Binance Futures Testnet](https://demo.binance.com/en/my/settings/api-management). It was specifically designed to handle dynamic execution of MARKET, LIMIT, and STOP (Stop-Limit) orders while providing top-tier user experience and logging.
 
 ---
 
