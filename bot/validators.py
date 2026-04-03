@@ -15,7 +15,7 @@ def validate_side(side: str) -> str:
     return side_upper
 
 def validate_order_type(order_type: str) -> str:
-    # Adding 'STOP' order type as bonus for Stop-Limit execution
+    
     valid_types = ["MARKET", "LIMIT", "STOP"]
     order_type_upper = order_type.upper()
     if order_type_upper not in valid_types:

@@ -43,10 +43,10 @@ class BinanceFuturesClient:
         if parameters is None:
             parameters = {}
 
-        # Timestamp is required to prevent replay attacks
+
         parameters['timestamp'] = self._get_timestamp()
         
-        # We also need to add signature
+ 
         parameters['signature'] = self._sign(parameters)
 
         url = f"{self.base_url}{endpoint}"
@@ -57,7 +57,7 @@ class BinanceFuturesClient:
             response = self.session.request(method, url, params=parameters)
             logger.debug(f"Received response [{response.status_code}]: {response.text}")
             
-            # Check if this is an error returned by Binance
+          
             if response.status_code >= 400:
                 logger.error(f"Binance API Error {response.status_code}: {response.text}")
                 raise BinanceAPIError(response.status_code, response.json())

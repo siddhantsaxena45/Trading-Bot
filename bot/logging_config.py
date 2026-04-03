@@ -11,13 +11,13 @@ def setup_logging():
     
     logger = logging.getLogger('trading_bot')
     
-    # Avoid adding multiple handlers if setup is called multiple times
+ 
     if logger.handlers:
         return logger
 
     logger.setLevel(logging.DEBUG)
 
-    # 1. File Handler for detailed logging
+
     file_formatter = logging.Formatter(
         '%(asctime)s | %(levelname)-8s | [%(filename)s:%(lineno)d] | %(message)s'
     )
@@ -25,11 +25,10 @@ def setup_logging():
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(file_formatter)
 
-    # 2. Add Handlers to the Logger
+
     logger.addHandler(file_handler)
 
-    # Explicitly do not add stream handler here since we use rich for console output in CLI
-    # Only exception is if we wanted non-rich raw dumps to terminal, but CLI layer handles its own UX.
+  
     
     return logger
 

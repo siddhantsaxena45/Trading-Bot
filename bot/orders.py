@@ -40,7 +40,7 @@ def place_order(
 
     if order_type == 'LIMIT':
         params["price"] = price
-        params["timeInForce"] = "GTC" # Good till canceled
+        params["timeInForce"] = "GTC" 
     
     elif order_type == 'STOP':
         params["algoType"] = "CONDITIONAL"
