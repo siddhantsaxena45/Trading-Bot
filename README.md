@@ -62,7 +62,7 @@ To meet the scope of "Estimated time less than 60 minutes", the following assump
 ## 🚀 Setup & Installation
 
 ### 1. Generating Binance Futures Testnet Keys
-1. Go to the [Binance Futures Testnet Portal](https://testnet.binancefuture.com/).
+1. Go to the [Binance Futures Testnet Portal](https://demo.binance.com/en/my/settings/api-management).
 2. Log in with your Binance account (or register one).
 3. Under the API Key dashboard, generate a new pair of credentials (`API Key` and `API Secret`). *Ensure you have simulated funds added to your testnet account.*
 
